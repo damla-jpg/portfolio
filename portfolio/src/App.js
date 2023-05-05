@@ -1,25 +1,35 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import About from './sections/About';
-import Main from './Main';
+import { Container, Row } from 'react-bootstrap';
+import Introduction from './sections/Introduction';
 import Project from './sections/Project';
+import Navbar from './Navbar';
+import './App.css';
+import Experience from './sections/Experience';
+import Education from './sections/Education';
+
+
+
 
 function App() {
   return (
-    <Container>
-      <Row>
-        <Main />
-      </Row>
-      <Row>
-        <Col>
-          <About />
-        </Col>
-        <Col>
+    <div>
+      <Navbar />
+      <Container className='page'>
+        <Row>
+          <Introduction />
+        </Row>
+        <Row>
+          <Experience />
+        </Row>
+        <Row>
+          <Education />
+        </Row>
+        <Row>
           <Project />
-        </Col>
-      </Row>
-    </Container>
+        </Row>
+      </Container>
+    </div>
+
   );
 }
 

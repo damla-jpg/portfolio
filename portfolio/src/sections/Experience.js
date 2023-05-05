@@ -7,13 +7,16 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 
-function BasicTimeline() {
+
+function Experience() {
     return (
-        <Timeline position="alternate">
+        <div className="experience" id='experience'>
+            <h1 style={{textAlign: 'center'}}>Experience</h1>
+            <Timeline position="alternate">
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot />
-                    <TimelineConnector />
+                    <TimelineConnector/>
                 </TimelineSeparator>
                 <TimelineContent>
                     <div class="content">
@@ -52,20 +55,8 @@ function BasicTimeline() {
                 </TimelineContent>
             </TimelineItem>
         </Timeline>
-    );
-}
-
-function About() {
-    return (
-        <div className="about">
-            <h3>Experience</h3>
-            <BasicTimeline />
-
-            <h3>Education</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit eget leo mollis porttitor. Fusce
-                vestibulum nunc vel quam feugiat, ac pellentesque ex dignissim.</p>
         </div>
     );
 }
 
-export default About;
+export default Experience;

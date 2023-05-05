@@ -1,20 +1,46 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+const card = (
+    <React.Fragment>
+        <CardContent>
+            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                Word of the Day
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                adjective
+            </Typography>
+            <Typography variant="body2">
+                well meaning and kindly.
+                <br />
+                {'"a benevolent smile"'}
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Learn More</Button>
+        </CardActions>
+    </React.Fragment>
+);
 
 export default function Project() {
     return (
-        <div class="container">
-			<h2>My Projects</h2>
-			<div class="project-item">
-				<h3>Project 1</h3>
-				<p>Insert project description here.</p>
-			</div>
-			<div class="project-item">
-				<h3>Project 2</h3>
-				<p>Insert project description here.</p>
-			</div>
-			<div class="project-item">
-				<h3>Project 3</h3>
-				<p>Insert project description here.</p>
-			</div>
-		</div>
+        <div class="projects" id="projects">
+            <h1 style={{ textAlign: 'center' }}>Projects</h1>
+            <Box sx={{ width: "200px" }}>
+                <Card variant="outlined">{card}</Card>
+            </Box>
+            {/* <Box sx={{ width: "200px" }}>
+                <Card variant="outlined">{card}</Card>
+            </Box>
+            <Box sx={{ width: "200px" }}>
+                <Card variant="outlined">{card}</Card>
+            </Box> */}
+        </div>
     );
 }
