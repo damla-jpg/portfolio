@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row } from 'react-bootstrap';
 import Introduction from './sections/Introduction';
 import Project from './sections/Project';
@@ -9,25 +8,28 @@ import Education from './sections/Education';
 
 
 
-
 function App() {
   return (
-    <div>
+    <div className='whole'>
       <Navbar />
-      <Container className='page'>
-        <Row>
+      <div>
+        <Introduction />
+        <Experience />
+      </div>
+      {/* <Container>
+        <Row className='intro-app'>
           <Introduction />
         </Row>
-        <Row>
+        <Row className='experience-app'>
           <Experience />
         </Row>
-        <Row>
+        <Row className='education-app'>
           <Education />
         </Row>
-        <Row>
+        <Row className='projects-app'>
           <Project />
         </Row>
-      </Container>
+      </Container> */}
     </div>
 
   );

@@ -1,0 +1,19 @@
+.experience,
+.education {
+    min-height: 100vh;
+    min-width: fit-content;
+    width: 100%;
+    background-color: rgb(102, 155, 188);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    color: rgb(253, 240, 213);
+}
+
+/* .edu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

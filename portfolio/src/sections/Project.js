@@ -7,19 +7,16 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const card = (
+const project1 = {title: "hello", text: "you"}
+
+const CardCustom = (title, text) => (
     <React.Fragment>
         <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Word of the Day
+            <Typography sx={{ fontSize: 25, fontWeight: "bold" }} color="text.primary" gutterBottom>
+                {title}
             </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                adjective
-            </Typography>
-            <Typography variant="body2">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+            <Typography variant="body1">
+                {text}
             </Typography>
         </CardContent>
         <CardActions>
@@ -32,15 +29,18 @@ export default function Project() {
     return (
         <div class="projects" id="projects">
             <h1 style={{ textAlign: 'center' }}>Projects</h1>
-            <Box sx={{ width: "200px" }}>
-                <Card variant="outlined">{card}</Card>
-            </Box>
-            {/* <Box sx={{ width: "200px" }}>
-                <Card variant="outlined">{card}</Card>
-            </Box>
-            <Box sx={{ width: "200px" }}>
-                <Card variant="outlined">{card}</Card>
-            </Box> */}
+            <div className='project-box'>
+                <Box sx={{ width: "20em", margin: "1em" }}>
+                    <Card sx={{ height: "20em"}} variant="outlined">{CardCustom(project1.title, project1.text)}</Card>
+                </Box>
+                <Box sx={{ width: "20em", margin: "1em"}}>
+                    <Card sx={{ height: "20em"}}variant="outlined">{CardCustom(project1.title, project1.text)}</Card>
+                </Box>
+                <Box sx={{ width: "20em", margin: "1em" }}>
+                    <Card sx={{ height: "20em"}} variant="outlined">{CardCustom(project1.title, project1.text)}</Card>
+                </Box>
+            </div>
+
         </div>
     );
 }

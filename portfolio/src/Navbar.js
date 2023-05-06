@@ -21,7 +21,7 @@ const StyledTabs = styled((props) => (
     '& .MuiTabs-indicatorSpan': {
         maxWidth: 40,
         width: '100%',
-        backgroundColor: '#635ee7',
+        backgroundColor: 'rgb(193, 18, 31)',
     },
 });
 
@@ -31,9 +31,9 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
         fontWeight: theme.typography.fontWeightRegular,
         fontSize: theme.typography.pxToRem(15),
         marginRight: theme.spacing(1),
-        color: '#000',
+        color: 'rgb(26, 117, 159)',
         '&.Mui-selected': {
-            color: '#000',
+            color: "rgb(193, 18, 31)",
         },
         '&.Mui-focusVisible': {
             backgroundColor: 'rgba(100, 95, 228, 0.32)',
@@ -66,7 +66,7 @@ export default function Navbar() {
 
     return (
         <BrowserRouter>
-            <Box sx={{ width: '100%', position: 'fixed', top: "0", backgroundColor: "white", zIndex: "100"}}>
+            <Box sx={{ width: '100%', position: 'fixed', top: "0", backgroundColor: "rgb(253, 240, 213)", zIndex: "100"}}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <StyledTabs value={value}  onChange={handleChange}>
                         <StyledTab label="About Me" component={ToApp}/>

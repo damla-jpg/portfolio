@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import '../styles/ExpEd.css'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -76,17 +77,17 @@ export default function Education() {
                     <TabPanel value={value} index={0} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
                         <h3 style={{ color: "rgb(0, 39, 81)" }}>Vrije Universiteit Amsterdam</h3>
                         <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2022 - PRESENT</p>
-                        <p>I'm currently pursuing my Masters' degree in Computer Science: Big Data Engineering Track.</p>
+                        <p style={{width: "30vw"}}>I'm currently pursuing my Masters' degree in Computer Science: Big Data Engineering Track.</p>
                     </TabPanel>
                     <TabPanel value={value} index={1} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
                         <h3 style={{ color: "rgb(0, 39, 81)" }}>Vrije Universiteit Amsterdam</h3>
                         <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2019 - JUNE 2022</p>
-                        <p>I completed my Bachelor's degree in Computer Science. During my degree I've completed the Data Science Minor.</p>
+                        <p style={{width: "30vw"}}>I completed my Bachelor's degree in Computer Science. During my degree I've completed the Data Science Minor.</p>
                     </TabPanel>
                     <TabPanel value={value} index={2} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
                         <h3 style={{ color: "rgb(0, 39, 81)" }}>Notre Dame de Sion, Istanbul</h3>
                         <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2014 - JUNE 2019</p>
-                        <p>I completed a French high-school in Istanbul where I took advanced courses in Math, Physics, Biology, and Chemistry.</p>
+                        <p style={{width: "30vw"}}>I completed a French high-school in Istanbul where I took advanced courses in Math, Physics, Biology, and Chemistry.</p>
                     </TabPanel>
                 </Box>
             </div>
