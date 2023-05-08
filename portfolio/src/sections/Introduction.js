@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 import Avatar from "@mui/material/Avatar";
 import profile from "./profile.jpg";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -23,9 +23,9 @@ function AboutMe() {
             <p> I created this website to showcase my projects and experiences.</p>
             <h2 >Socials</h2>
             <div className="social">
-                <a style={{ color: "rgb(253, 240, 213)" }} href="https://github.com/damla-jpg" target="_blank"><GitHubIcon sx={{ fontSize: 40 }} /></a>
-                <a style={{ color: "rgb(102, 155, 188)", marginLeft: "1vw" }} href="https://www.linkedin.com/in/damla-ural-502446213/" target="_blank"><LinkedInIcon sx={{ fontSize: 50 }} /></a>
-                <a style={{ color: "rgb(193, 18, 31)", marginLeft: "1vw" }} href="https://www.instagram.com/is.drippy/" target="_blank"><InstagramIcon sx={{ fontSize: 50 }} /></a>
+                <a style={{ color: "rgb(253, 240, 213)" }} href="https://github.com/damla-jpg" target="_blank" rel="noreferrer"><GitHubIcon sx={{ fontSize: 40 }} /></a>
+                <a style={{ color: "rgb(102, 155, 188)", marginLeft: "1vw" }} href="https://www.linkedin.com/in/damla-ural-502446213/" target="_blank" rel="noreferrer"><LinkedInIcon sx={{ fontSize: 50 }} /></a>
+                <a style={{ color: "rgb(193, 18, 31)", marginLeft: "1vw" }} href="https://www.instagram.com/is.drippy/" target="_blank" rel="noreferrer"><InstagramIcon sx={{ fontSize: 50 }} /></a>
             </div>
         </div>
     );

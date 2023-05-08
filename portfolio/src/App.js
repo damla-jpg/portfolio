@@ -1,12 +1,10 @@
-import { Container, Row } from 'react-bootstrap';
-import Introduction from './sections/Introduction';
-import Project from './sections/Project';
+// import { Container, Row } from 'react-bootstrap';
 import Navbar from './Navbar';
 import './App.css';
+import Introduction from './sections/Introduction';
 import Experience from './sections/Experience';
 import Education from './sections/Education';
-
-
+import Project from './sections/Project';
 
 function App() {
   return (
@@ -15,6 +13,8 @@ function App() {
       <div>
         <Introduction />
         <Experience />
+        <Education />
+        <Project />
       </div>
       {/* <Container>
         <Row className='intro-app'>

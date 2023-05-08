@@ -53,7 +53,7 @@ export default function Education() {
                 <Box
                     className='edu-tabs'
                     sx={{
-                        bgcolor: 'background.paper',
+                        bgcolor: "rgb(253, 240, 213)",
                         display: 'flex',
                         height: "50vh",
                         width: "60vw",
@@ -62,7 +62,7 @@ export default function Education() {
                 >
                     <Tabs
                         orientation="vertical"
-                        variant="scrollable"
+                        // variant="scrollable"
                         value={value}
                         onChange={handleChange}
                         aria-label="Vertical tabs example"
@@ -70,24 +70,24 @@ export default function Education() {
                             borderRight: 1, borderColor: 'divider',
                         }}
                     >
-                        <Tab label="Masters" {...a11yProps(0)} sx={{ ":hover": { bgcolor: "rgb(235, 245, 255)" }, fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
-                        <Tab label="Bachelors" {...a11yProps(1)} sx={{ ":hover": { bgcolor: "rgb(235, 245, 255)" }, fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
-                        <Tab label="High School" {...a11yProps(2)} sx={{ ":hover": { bgcolor: "rgb(235, 245, 255)" }, fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
+                        <Tab label="Masters" {...a11yProps(0)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
+                        <Tab label="Bachelors" {...a11yProps(1)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
+                        <Tab label="High School" {...a11yProps(2)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
                     </Tabs>
                     <TabPanel value={value} index={0} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
-                        <h3 style={{ color: "rgb(0, 39, 81)" }}>Vrije Universiteit Amsterdam</h3>
-                        <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2022 - PRESENT</p>
-                        <p style={{width: "30vw"}}>I'm currently pursuing my Masters' degree in Computer Science: Big Data Engineering Track.</p>
+                        <h3 style={{ color: "rgb(193, 18, 31)" }}>Vrije Universiteit Amsterdam</h3>
+                        <p style={{ color: "rgb(0, 48, 73)", marginBottom: "5vh" }}>SEPTEMBER 2022 - PRESENT</p>
+                        <p style={{width: "40vw"}}>I'm currently pursuing my Masters' degree in Computer Science: Big Data Engineering Track.</p>
                     </TabPanel>
                     <TabPanel value={value} index={1} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
-                        <h3 style={{ color: "rgb(0, 39, 81)" }}>Vrije Universiteit Amsterdam</h3>
-                        <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2019 - JUNE 2022</p>
-                        <p style={{width: "30vw"}}>I completed my Bachelor's degree in Computer Science. During my degree I've completed the Data Science Minor.</p>
+                        <h3 style={{ color: "rgb(193, 18, 31)" }}>Vrije Universiteit Amsterdam</h3>
+                        <p style={{ color: "rgb(0, 48, 73)", marginBottom: "5vh" }}>SEPTEMBER 2019 - JUNE 2022</p>
+                        <p style={{width: "40vw"}}>I completed my Bachelor's degree in Computer Science. During my degree I've completed the Data Science Minor.</p>
                     </TabPanel>
                     <TabPanel value={value} index={2} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
-                        <h3 style={{ color: "rgb(0, 39, 81)" }}>Notre Dame de Sion, Istanbul</h3>
-                        <p style={{ color: "rgb(0, 128, 255)", marginBottom: "5vh" }}>SEPTEMBER 2014 - JUNE 2019</p>
-                        <p style={{width: "30vw"}}>I completed a French high-school in Istanbul where I took advanced courses in Math, Physics, Biology, and Chemistry.</p>
+                        <h3 style={{ color: "rgb(193, 18, 31)" }}>Notre Dame de Sion, Istanbul</h3>
+                        <p style={{ color: "rgb(0, 48, 73)", marginBottom: "5vh" }}>SEPTEMBER 2014 - JUNE 2019</p>
+                        <p style={{width: "40vw"}}>I completed a French high-school in Istanbul where I took advanced courses in Math, Physics, Biology, and Chemistry.</p>
                     </TabPanel>
                 </Box>
             </div>
