@@ -1,0 +1,18 @@
+.projects{
+    background-color: rgb(193, 18, 31);
+    min-height: 100vh;
+    height: fit-content;
+    max-width: fit-content;
+    width: 100%;
+    padding: 5em;
+}
+
+.project-box{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    max-width: fit-content;
+  } 

@@ -4,18 +4,3 @@
   top: 0;
   max-width: 100vw;
 }
-
-.projects {
-  min-height: 95vh;
-  margin-top: 5vh;
-  /* background-color: yellow; */
-}
-
-.project-box{
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-}
