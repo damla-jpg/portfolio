@@ -56,7 +56,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     }),
   );
 
-export default function Education() {
+export default function Education({ sectionRef }) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -64,7 +64,7 @@ export default function Education() {
     };
 
     return (
-        <div class="education" id="education">
+        <div class="education" id="education" ref={sectionRef}>
             <h1>Education</h1>
             <div className='edu-box'>
                 <Box

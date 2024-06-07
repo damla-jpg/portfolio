@@ -59,20 +59,55 @@ const ToProjects = React.forwardRef((props, ref) => (
 
 export default function Navbar() {
     const [value, setValue] = React.useState(0);
+    const sectionsRef = React.useRef([]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
+    React.useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.6,
+        };
+
+        const callback = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const index = sectionsRef.current.indexOf(entry.target);
+                    setValue(index);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        const currentSections = sectionsRef.current;
+        currentSections.forEach((section) => {
+            if (section) {
+                observer.observe(section);
+            }
+        });
+
+        return () => {
+            currentSections.forEach((section) => {
+                if (section) {
+                    observer.unobserve(section);
+                }
+            });
+        };
+    }, [sectionsRef]);
+
     return (
         <BrowserRouter>
-            <Box sx={{ width: '100%', position: 'fixed', top: "0", backgroundColor: "rgb(253, 240, 213)", zIndex: "100"}}>
+            <Box sx={{ width: '100%', height: "4vh", position: 'fixed', top: "0", backgroundColor: "rgb(253, 240, 213)", zIndex: "100"}}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <StyledTabs value={value}  onChange={handleChange}>
-                        <StyledTab label="About Me" component={ToApp}/>
-                        <StyledTab label="Experience" component = {ToExperience}/>
-                        <StyledTab label="Education" component = {ToEducation}/>
-                        <StyledTab label="Projects" component = {ToProjects}/>
+                    <StyledTabs value={value} onChange={handleChange}>
+                        <StyledTab label="About Me" component={ToApp} />
+                        <StyledTab label="Experience" component={ToExperience} />
+                        <StyledTab label="Education" component={ToEducation} />
+                        <StyledTab label="Projects" component={ToProjects} />
                     </StyledTabs>
                 </Box>
             </Box>

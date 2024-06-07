@@ -21,10 +21,10 @@ const bull = (
 );
 
 
-function Experience() {
+function Experience({ sectionRef }) {
 
     return (
-        <div className="experience" id='experience' >
+        <div className="experience" id='experience' ref={sectionRef}>
             <h1 style={{ padding: "1em" }}>Experience</h1>
 
             <Timeline sx={{

@@ -64,7 +64,7 @@ const CardCustom = (title, text, link, isPublishible) => (
     </React.Fragment>
 );
 
-export default function Project() {
+export default function Project({ sectionRef }) {
     const boxStyle = {
         height: "23em",
         backgroundColor: "rgb(120, 0, 0)",
@@ -82,7 +82,7 @@ export default function Project() {
     }
 
     return (
-        <div class="projects" id="projects">
+        <div class="projects" id="projects" ref={sectionRef}>
             <h1 style={{ padding: "1em", color: "rgb(253, 240, 213)" }}>Publications and Projects</h1>
             <div className='project-box'>
                 <Box sx={{ width: "25em", margin: "1em" }}>

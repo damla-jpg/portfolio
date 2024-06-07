@@ -31,9 +31,9 @@ function AboutMe() {
     );
 }
 
-function Introduction() {
+function Introduction({sectionRef}) {
     return (
-        <div className='introduction' id="introduction">
+        <div className='introduction' id="introduction" ref={sectionRef}>
             <div className="intro-about">
                 <Intro />
                 <AboutMe />
