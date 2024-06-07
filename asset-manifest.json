@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ad164cb.css",
-    "main.js": "/static/js/main.c8673e49.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/photo_damla.jpg": "/static/media/photo_damla.c16f12529c696a68ad7f.jpg",
-    "index.html": "/index.html",
-    "main.7ad164cb.css.map": "/static/css/main.7ad164cb.css.map",
-    "main.c8673e49.js.map": "/static/js/main.c8673e49.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/react-gh-pages/static/css/main.7ad164cb.css",
+    "main.js": "/react-gh-pages/static/js/main.a57e1d54.js",
+    "static/js/787.1ed0c42c.chunk.js": "/react-gh-pages/static/js/787.1ed0c42c.chunk.js",
+    "static/media/photo_damla.jpg": "/react-gh-pages/static/media/photo_damla.c16f12529c696a68ad7f.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.7ad164cb.css.map": "/react-gh-pages/static/css/main.7ad164cb.css.map",
+    "main.a57e1d54.js.map": "/react-gh-pages/static/js/main.a57e1d54.js.map",
+    "787.1ed0c42c.chunk.js.map": "/react-gh-pages/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ad164cb.css",
-    "static/js/main.c8673e49.js"
+    "static/js/main.a57e1d54.js"
   ]
 }
