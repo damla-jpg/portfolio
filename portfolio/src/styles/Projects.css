@@ -5,6 +5,8 @@
     max-width: fit-content;
     width: 100%;
     padding: 5em;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .project-box{

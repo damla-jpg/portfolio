@@ -1,6 +1,6 @@
 // import { Container, Row, Col } from "react-bootstrap";
 import Avatar from "@mui/material/Avatar";
-import profile from "./profile.jpg";
+import profile from "./photo_damla.jpg";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from "@mui/icons-material/Instagram";

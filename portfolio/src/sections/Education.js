@@ -73,7 +73,7 @@ export default function Education() {
                         bgcolor: "rgb(253, 240, 213)",
                         display: 'flex',
                         height: "60vh",
-                        width: "60vw",
+                        width: "80vw",
 
                     }}
                 >
@@ -87,9 +87,9 @@ export default function Education() {
                             borderRight: 1, borderColor: 'divider',
                         }}
                     >
-                        <StyledTab label="Masters" {...a11yProps(0)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
-                        <StyledTab label="Bachelors" {...a11yProps(1)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
-                        <StyledTab label="High School" {...a11yProps(2)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "200px" }} />
+                        <StyledTab label="Masters (MSc)" {...a11yProps(0)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1.5em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "20vw" }} />
+                        <StyledTab label="Bachelors (BSc)" {...a11yProps(1)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1.5em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "20vw" }} />
+                        <StyledTab label="High School" {...a11yProps(2)} sx={{ ":hover": { textDecoration: "underline" }, color: "rgb(0, 48, 73)", fontSize: "1.5em", fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif", width: "20vw" }} />
                     </Tabs>
                     <TabPanel value={value} index={0} sx={{ fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" }}>
                         <h3 style={{ color: "rgb(193, 18, 31)" }}>Vrije Universiteit Amsterdam</h3>
